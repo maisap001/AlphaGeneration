@@ -1,0 +1,50 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="bmi_calculator.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="health_info.html">Health Info</a></li>
+            <li><a href="bmi_calculator.html">BMI Calculator</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>What is BMI?</h2>
+        <p>BMI stands for Body Mass Index, a number calculated from your height and weight. It gives an indication of whether you are underweight, normal weight, overweight, or obese.</p>
+
+        <h2>BMI Categories</h2>
+        <ul>
+            <li>Underweight: BMI less than 18.5</li>
+            <li>Normal weight: BMI 18.5 – 24.9</li>
+            <li>Overweight: BMI 25 – 29.9</li>
+            <li>Obesity: BMI 30 or greater</li>
+        </ul>
+
+        <h2>Calculate Your BMI</h2>
+        <form>
+            <label for="height">Height (in meters): </label>
+            <input type="number" id="height" step="0.01" required><br>
+
+            <label for="weight">Weight (in kilograms): </label>
+            <input type="number" id="weight" step="0.1" required><br>
+
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+        </form>
+
+        <p id="result"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Health Awareness</p>
+    </footer>
+</body>
+</html>
